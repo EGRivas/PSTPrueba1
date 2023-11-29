@@ -11,6 +11,7 @@ server.set('host','localhost');
 server.use(express.json()); // para procesar solicitudes JSON
 server.use(express.static(path.join(__dirname, 'build')));
 server.use(cors());
+
 server.use('/estudiantes', require('./routes/estudiantes.js'));
 server.use('/profesor', require('./routes/profesor.js'));
 
