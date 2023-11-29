@@ -4,7 +4,7 @@ const server = express();
 const path = require('path');
 
 //Configuraciones
-server.set('port',8080);
+server.set('port',process.env.PORT || 8080);
 server.set('host','localhost');
 
 //Middlewares
